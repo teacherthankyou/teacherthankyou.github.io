@@ -1,7 +1,7 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-
+<link rel=”shortcut icon” href=”/favicon.ico” mce_href=”/favicon.ico”/>
   <style>
 #homepage-heading { font-family: 'Quicksand', sans-serif;
         text-align: center; font-size: 70px; color:#42d9c8;}
@@ -28,23 +28,49 @@ font-family: 'Quicksand', sans-serif;
 
   }
 
-  .dog:active::after {
+  .dog:hover::after {
     content: "  >>";
 
   }
 
-  .buy {float: right;
-        }
+  .classd {background: #268699;
+    background-image: -webkit-linear-gradient(top, #268699, 42d9c8);
+    background-image: -moz-linear-gradient(top, #268699, 42d9c8);
+    background-image: -ms-linear-gradient(top, #268699, 42d9c8);
+    background-image: -o-linear-gradient(top, #268699, 42d9c8);
+    background-image: linear-gradient(to bottom, #268699, 42d9c8);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+  font-family: 'Quicksand', sans-serif;
+    color: #42d9c8;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    float: right;}
+    .classd:hover {
+
+      background: #28464b;
+       text-decoration: none;
+
+    }
+
+  .classd:hover::before {content: "<<  ";}
+
+
   </style>
 </head>
 <body>
-<h1 id="homepage-heading">Candy & Co</h1>
+  <div>
+    <h1 id="homepage-heading">Candy & Co</h1>
+
+</div>
 <form method="get" action="/about.html">
   <button class="dog"type="submit">About</button>
 </form>
 
 <form method="get" action="/shop.html">
-  <button class="dog buy" type="submit">Buy</button>
+  <button class="classd" type="submit">Buy</button>
 </form>
 
 </body>
